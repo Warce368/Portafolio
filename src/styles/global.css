@@ -15,12 +15,14 @@ body {
 		#000000 50%,  /* Casi negro */
         #000000 100%  /* Negro total */
     );
-    background-size: 100% 400vh; /* Se expande con el scroll */
+   		background-size: 100% 400vh; /* Se expande con el scroll */
 		color:aliceblue;
 		font-family: 'Roboto Mono Variable';
 		font-weight: 400;
 		font-display: swap;
 		font-style: normal;
+
+		scroll-behavior: smooth;
 }
 
 .container{
@@ -56,9 +58,7 @@ body {
 
 
 
-	html {
-		scroll-behavior: smooth;
-	}
+
 
 /* Ancho del scrollbar */
 ::-webkit-scrollbar {
