@@ -1,0 +1,44 @@
+---
+import Card from "./Card.astro";
+import Icono from "./Icono.astro";
+import IcoClase from "./IcoClase.astro";
+import Py from "./icons/Py.astro";
+import Linea from "./Linea.astro";
+import Cssicono from "./icons/Cssicono.astro";
+import Htmlicono from "./icons/Htmlicono.astro";
+
+---
+
+
+<section id="projects" class="container m-auto p-5">
+    <div class=" ">
+        <h2 class="text-2xl mb-30 md:text-left text-center">
+            Proyectos
+        </h2>
+        <Card imagen="/pdfm.png "
+        titulo="PDFM" 
+        descripcion="Desarrollé una herramienta para la gestión de documentos PDF de forma autodidacta para usos personales y apoyo a compañeros de cursos">
+            <IcoClase><Icono Component={Py} class="w-7 h-7" /></IcoClase>   
+
+        </Card>
+
+        <Linea/>
+        
+        <Card imagen="/marcebot.png"
+        titulo="MarceBot"
+        descripcion="Creé un bot de música para la plataforma Discord como parte de mi aprendizaje autodidacta con el objetivo de mejorar las reuniones con mis compañeros de equipo">
+        <IcoClase><Icono Component={Py} class="w-7 h-7" /></IcoClase>   
+        </Card>
+        <Linea/>
+
+        <Card imagen="/marcefix.png"
+        titulo="MarceBot"
+        descripcion="Pagina similar a Netflix en diseño">
+        <IcoClase><Icono Component={Htmlicono} class="w-7 h-7" /></IcoClase>  
+        <IcoClase><Icono Component={Cssicono} class="w-7 h-7" /></IcoClase>  
+        </Card>
+        
+        
+
+    </div>
+</section>

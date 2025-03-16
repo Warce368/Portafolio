@@ -1,0 +1,28 @@
+---
+const {imagen,descripcion,titulo}  = Astro.props
+
+
+
+
+---
+
+
+
+<div class="flex md:flex-row flex-col  md:text-pretty md:text-left md:gap-y-0 md:m-0 md:max-w-160 max-w-120 m-auto text-center items-center text-pretty gap-y-10 ">
+
+    <div class=" flex-1 pr-3">
+        <h3 class="font-bold mb-5 text-[20px]">
+        {titulo}
+        </h3>
+        {descripcion}
+    </div>
+
+    <div class="bg-black flex flex-col relative group ">
+        <img src={imagen} alt="" class="flex size-50 group-hover:opacity-40 duration-400">
+        <div id="iconos" class="h-10 flex place-content-around w-full absolute bottom-0  z-10 ">
+
+            <slot />
+            
+        </div>
+    </div>
+</div>

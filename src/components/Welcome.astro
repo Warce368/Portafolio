@@ -1,0 +1,33 @@
+---
+import Badge from "./Badge.astro";
+import Github from "./icons/Github.astro";
+import LinkedinIcono from "./icons/LinkedinIcono.astro";
+import SocialPill from "./SocialPill.astro";
+import Gmail from "./icons/Gmail.astro";
+
+//*paleta  de colores 
+//#F4E1C6 , #E8AEB7  , #C4A77D , #3B0F12  #fff, #F5E6E8 , #0D0D0D
+---
+
+<div class="relative m-auto px-5 container mb-50">
+		<div class="md:flex md:items-center font-bold">
+			<h1 class=" text-[#F4E1C6] text-5xl md:flex md:flex-row md:mb-3 md:gap-x-2 flex-col ">
+				Hola, Soy Marcello Rios <div class="mt-3  md:items-end md:flex flex "><Badge>Disponible</Badge></div>
+			
+			</h1>
+			
+		</div>
+		<div class="mt-8 mb-5">
+			<p class="text-2xl "> <span class="glow">Futuro</span>
+			<span class="text-[#E8AEB7]">Ingeniero de software</span> orientado al <span class="text-[#C4A77D]">desarrollo front-end</span>. Me gusta crear landing pages y aplicaciones web con un diseño de interfaz inspirado en videojuegos</p>
+		</div>
+		<div class="md:flex md:flex-row gap-x-3">
+			<SocialPill href="https://www.linkedin.com/in/marcello-rios-levano-b46384259/"><LinkedinIcono class="h-4 w-4"/>Linkedin</SocialPill>
+			<SocialPill href="https://github.com/Warce368" ><Github class="h-4 w-4" />Github</SocialPill>
+			<SocialPill href="mailto:12345marce12345@gmail.com" ><Gmail class="h-4 w-4" />12345marce12345@gmail.com</SocialPill>
+		</div>
+
+
+
+</div>
+
