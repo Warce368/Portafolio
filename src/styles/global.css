@@ -9,13 +9,15 @@ body {
 		height: 100%;
 		background: linear-gradient(to bottom,  
         #3B0F12 0%,   /* Rojo oscuro en la parte superior */
-        #250A0C 10%,  /* Oscureciendo más */
-        #120506 20%,  /* Transición más rápida al negro */
-        #050203 40%,
-		#000000 50%,  /* Casi negro */
+        #250A0C 7%,  /* Oscureciendo más */
+        #120506 12%,  /* Transición más rápida al negro */
+        #050203 20%,
+		#050203 30%,
+		#000000 50%,
+		#000000 80%,  /* Casi negro */
         #000000 100%  /* Negro total */
     );
-   		background-size: 100% 400vh; /* Se expande con el scroll */
+   		background-size: 100% 800vh; /* Se expande con el scroll */
 		color:aliceblue;
 		font-family: 'Roboto Mono Variable';
 		font-weight: 400;
