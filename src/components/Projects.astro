@@ -6,6 +6,9 @@ import Py from "./icons/Py.astro";
 import Linea from "./Linea.astro";
 import Cssicono from "./icons/Cssicono.astro";
 import Htmlicono from "./icons/Htmlicono.astro";
+import Laravelico from "./icons/Laravelico.astro";
+import Astroico from "./icons/Astroico.astro";
+import Sql from "./icons/Sql.astro";
 
 ---
 
@@ -15,7 +18,7 @@ import Htmlicono from "./icons/Htmlicono.astro";
         <h2 class="text-2xl mb-30 md:text-left text-center text-[#E6C68D]">
             Proyectos
         </h2>
-        <Card imagen="/pdfm.png "
+        <Card imagen="/pdfm.png "  link="https://github.com/Warce368/PDFM"
         titulo="PDFM" 
         descripcion="Desarrollé una herramienta para la gestión de documentos PDF de forma autodidacta para usos personales y apoyo a compañeros de cursos">
             <IcoClase><Icono Component={Py} class="w-7 h-7" /></IcoClase>   
@@ -24,7 +27,7 @@ import Htmlicono from "./icons/Htmlicono.astro";
 
         <Linea/>
         
-        <Card imagen="/marcebot.png"
+        <Card imagen="/marcebot.png"  
         titulo="MarceBot"
         descripcion="Creé un bot de música para la plataforma Discord como parte de mi aprendizaje autodidacta con el objetivo de mejorar las reuniones con mis compañeros de equipo">
         <IcoClase><Icono Component={Py} class="w-7 h-7" /></IcoClase>   
@@ -34,11 +37,17 @@ import Htmlicono from "./icons/Htmlicono.astro";
         <Card imagen="/marcefix.png"
         titulo="Marcefix"
         descripcion="Pagina similar a Netflix en diseño">
-        <IcoClase><Icono Component={Htmlicono} class="w-7 h-7" /></IcoClase>  
-        <IcoClase><Icono Component={Cssicono} class="w-7 h-7" /></IcoClase>  
+        <IcoClase><Icono Component={Astroico} class="w-7 h-7" /></IcoClase>  
+        
         </Card>
         
-        
+        <Linea/>
 
+        <Card imagen="/sistemacobr.png" link="https://github.com/Warce368/Sistema-de-cobranza"
+        titulo="Sistema de cobranza"
+        descripcion="Sistema de cobranza ">
+        <IcoClase><Icono Component={Laravelico} class="w-7 h-7" /></IcoClase>  
+        <IcoClase><Icono Component={Sql} class="w-7 h-7" /></IcoClase>  
+        </Card>
     </div>
 </section>
